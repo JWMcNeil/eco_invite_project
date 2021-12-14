@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Literata&family=Smooch&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Eco Invite</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <h1 class="logo-text">
+          Eco<br />
+          Invite
+        </h1>
+        <h3 class="taggline">every invite saved = one tree planted!</h3>
+        <button type="button" class="print" onclick="window.print()">print</button>
+        <button type="button" class="save">save</button>
+      </nav>
+    </header>
+    <main>
+      <wrapper>
+        <form class="invite-form">
+          <label for="host-line" class="field"
+            >host line<span
+              ><input
+                type="text"
+                id="hostLine"
+                name="hostLine"
+                placeholder="host line"
+                autocomplete="off"
+                title="The invitation intro"
+               /></span
+          ></label>
+          <label for="couple-one" class="field"
+            >couple one<span
+              ><input
+                type="text"
+                id="coupleOne"
+                name="coupleOne"
+                placeholder="couple one"
+                autocomplete="off" /></span
+          ></label>
+          <label for="couple-two" class="field"
+            >couple two<span
+              ><input
+                type="text"
+                id="coupleTwo"
+                name="coupleTwo"
+                placeholder="couple two"
+                autocomplete="off" /></span
+          ></label>
+          <label for="action-line" class="field"
+            >invitation / action line<span
+              ><input
+                type="text"
+                id="actionLine"
+                name="actionLine"
+                placeholder="invitation / action line"
+                autocomplete="off" /></span
+          ></label>
+          <label for="information" class="field"
+            >information<span
+              ><input
+                type="text"
+                id="info"
+                name="info"
+                placeholder="information"
+                autocomplete="off" /></span
+          ></label>
+          <label for="location" class="field"
+            >location<span
+              ><input
+                type="text"
+                id="locationInput"
+                name="location"
+                placeholder="location"
+                autocomplete="off" /></span
+          ></label>
+          <label for="party-line" class="field"
+            >party line<span
+              ><input
+                type="text"
+                id="partyLine"
+                name="partyLine"
+                placeholder="party line"
+                autocomplete="off" /></span
+          ></label>
+        </form>
+        
+        <img id="previewWindow" class="preview-window" src="/assets/invite_1.png">
+        </img>
+
+
+        <img id="themeBox1" class="grow" src="/assets/invite_1.png"></img>
+        <img id="themeBox2" class="grow" src="/assets/invite_2.png"></img>
+        <img id="themeBox3" class="grow" src="/assets/invite_3.png"></img>
+
+        
+      <section class="liveText-grid" id="liveText-grid">
+        <div id="showHostLine" class="live-text-host-line"></div> 
+        <div id="showCoupleOne" class="live-text-couple-one"></div>
+        <div id="extra1" class="extra1">&</div>
+        <div id="showCoupleTwo" class="live-text-couple-two"></div>
+        <div id="showActionLine" class="live-text-action-line"></div>
+        <div id="showInfo" class="live-text-info"></div>
+        <div id="showLocationInput" class="live-text-location-input"></div>
+        <div id="showPartyLine" class="live-text-party-line"></div>
+      </section>
+      </wrapper>
+    </main>
+  </body>
+</html>
