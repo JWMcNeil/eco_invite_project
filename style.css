@@ -11,6 +11,8 @@
   --ff-handwriting: "Smooch", cursive;
   --ff-handwriting2: verdana;
   --ff-handwriting3: "Corinthia", serif;
+  --ff-lovelight: "Love Light", cursive;
+  --ff-pacifico: "Pacifico", cursive;
 }
 
 html {
@@ -236,7 +238,7 @@ input:focus {
   grid-area: tb3;
 }
 
-/* live text */
+/* live text - defualt values until theme is selected*/
 
 .preview-window {
   position: relative;
@@ -359,4 +361,37 @@ input:focus {
   text-align: center;
 }
 
-/* Media quereies */
+/* Theme Classes One */
+.themeOneLowercase {
+  font-family: sans-serif;
+  color: var(--clr-text);
+  text-decoration: uppercase;
+}
+
+.themeOneUppercase {
+  font-family: var(--ff-handwriting);
+  color: var(--clr-text);
+}
+
+/* Theme Classes Two */
+.themeTwoLowercase {
+  font-family: var(--ff-handwriting2);
+  color: var(--clr-nav);
+}
+
+.themeTwoUppercase {
+  font-family: var(--ff-lovelight);
+  color: var(--clr-nav);
+}
+
+/* Theme Classes Three */
+
+.themeThreeLowercase {
+  font-family: var(--ff-text);
+  color: var(--clr-main-text);
+}
+
+.themeThreeUppercase {
+  font-family: var(--ff-pacifico);
+  color: var(--clr-main-text);
+}

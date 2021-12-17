@@ -8,7 +8,7 @@ const themes = [
   "assets/invite_3.png",
 ];
 
-// Theme Selector
+// Theme Background Selector
 
 const previewWindow = document.querySelector("#previewWindow");
 const themeBox1 = document.querySelector("#themeBox1");
@@ -28,8 +28,6 @@ themeBox3.addEventListener("click", () => {
 });
 
 // Live Text
-
-// VERSION 1
 
 let hostLine = document.getElementById("hostLine");
 hostLine.onkeyup = hostLine.onkeyDown = function () {
@@ -65,65 +63,52 @@ let partyLine = document.getElementById("partyLine");
 partyLine.onkeyup = partyLine.onkeyDown = function () {
   document.getElementById("showPartyLine").innerHTML = this.value;
 };
-// VERSION 2
 
-// function changeText() {
-//   let text = document.getElementById("hostLine").value;
-//   document.getElementById("showHostLine").innerHTML = text;
-// }
+// Theme Change
 
-// Change theme fonts and colors
+function addThemeOne() {
+  for (const themeOneLower of document.getElementsByClassName(
+    "lowercaseText"
+  )) {
+    themeOneLower.classList.remove("themeTwoLowercase");
+    themeOneLower.classList.remove("themeThreeLowercase");
+    themeOneLower.classList.add("themeOneLowercase");
+  }
+  for (const themeOneUppercase of document.getElementsByClassName(
+    "coupleText"
+  )) {
+    themeOneUppercase.classList.remove("themeTwoUppercase");
+    themeOneUppercase.classList.remove("themeThreeUppercase");
+    themeOneUppercase.classList.add("themeOneUppercase");
+  }
+}
 
-document.getElementById("themeBox1").onclick = function () {
-  document.getElementById("showHostLine").style.color = "";
-  document.getElementById("showHostLine").style.fontFamily = "";
-  document.getElementById("showCoupleOne").style.color = "";
-  document.getElementById("extra1").style.color = "";
-  document.getElementById("showCoupleTwo").style.color = "";
-  document.getElementById("showActionLine").style.color = "";
-  document.getElementById("showActionLine").style.fontFamily = "";
-  document.getElementById("showInfo").style.color = "";
-  document.getElementById("showInfo").style.fontFamily = "";
-  document.getElementById("showLocationInput").style.color = "";
-  document.getElementById("showLocationInput").style.fontFamily = "";
-  document.getElementById("showPartyLine").style.color = "";
-  document.getElementById("showPartyLine").style.fontFamily = "";
-};
+function addThemeTwo() {
+  for (const themeTwoLower of document.getElementsByClassName(
+    "lowercaseText"
+  )) {
+    themeTwoLower.classList.remove("themeOneLowercase");
+    themeTwoLower.classList.remove("themeThreeLowercase");
+    themeTwoLower.classList.add("themeTwoLowercase");
+  }
+  for (const themeTwoUpper of document.getElementsByClassName("coupleText")) {
+    themeTwoUpper.classList.remove("themeOneUppercase");
+    themeTwoUpper.classList.remove("themeThreeUppercase");
+    themeTwoUpper.classList.add("themeTwoUppercase");
+  }
+}
 
-document.getElementById("themeBox2").onclick = function () {
-  document.getElementById("showHostLine").style.color = "#131313";
-  document.getElementById("showHostLine").style.fontFamily =
-    "var(--ff-handwriting2)";
-  document.getElementById("showCoupleOne").style.color = "#131313";
-  document.getElementById("extra1").style.color = "#131313";
-  document.getElementById("showCoupleTwo").style.color = "#131313";
-  document.getElementById("showActionLine").style.color = "#131313";
-  document.getElementById("showActionLine").style.fontFamily =
-    "var(--ff-handwriting2)";
-  document.getElementById("showInfo").style.color = "#131313";
-  document.getElementById("showInfo").style.fontFamily =
-    "var(--ff-handwriting2)";
-  document.getElementById("showLocationInput").style.color = "#131313";
-  document.getElementById("showLocationInput").style.fontFamily =
-    "var(--ff-handwriting2)";
-  document.getElementById("showPartyLine").style.color = "#131313";
-  document.getElementById("showPartyLine").style.fontFamily =
-    "var(--ff-handwriting2)";
-};
-
-document.getElementById("themeBox3").onclick = function () {
-  document.getElementById("showHostLine").style.color = "#EEE";
-  document.getElementById("showHostLine").style.fontFamily = "var(--ff-logo)";
-  document.getElementById("showCoupleOne").style.color = "#EEE";
-  document.getElementById("extra1").style.color = "#EEE";
-  document.getElementById("showCoupleTwo").style.color = "#EEE";
-  document.getElementById("showActionLine").style.color = "#EEE";
-  document.getElementById("showActionLine").style.fontFamily = "var(--ff-logo)";
-  document.getElementById("showInfo").style.color = "#EEE";
-  document.getElementById("showInfo").style.fontFamily = "var(--ff-logo)";
-  document.getElementById("showLocationInput").style.color = "#EEE";
-  document.getElementById("showLocationInput").style.fontFamily =
-    "var(--ff-logo)";
-  document.getElementById("showPartyLine").style.color = "#EEE";
-  document.getElementById("showPartyLine").style.fontFamily = "var(--ff-logo)";
-};
+function addThemeThree() {
+  for (const themeThreeLower of document.getElementsByClassName(
+    "lowercaseText"
+  )) {
+    themeThreeLower.classList.remove("themeOneLowercase");
+    themeThreeLower.classList.remove("themeTwoLowercase");
+    themeThreeLower.classList.add("themeThreeLowercase");
+  }
+  for (const themeThreeUpper of document.getElementsByClassName("coupleText")) {
+    themeThreeUpper.classList.remove("themeOneUppercase");
+    themeThreeUpper.classList.remove("themeTwoUppercase");
+    themeThreeUpper.classList.add("themeThreeUppercase");
+  }
+}

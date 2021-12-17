@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Literata&family=Smooch&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Literata&family=Love+Light&family=Pacifico&family=Smooch&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
     <title>Eco Invite</title>
   </head>
@@ -97,20 +97,20 @@
         </img>
 
 
-        <img id="themeBox1" class="grow" src="/assets/invite_1.png"></img>
-        <img id="themeBox2" class="grow" src="/assets/invite_2.png"></img>
-        <img id="themeBox3" class="grow" src="/assets/invite_3.png"></img>
+        <img id="themeBox1" class="grow" src="/assets/invite_1.png" onclick="addThemeOne()"></img>
+        <img id="themeBox2" class="grow" src="/assets/invite_2.png" onclick="addThemeTwo()"></img>
+        <img id="themeBox3" class="grow" src="/assets/invite_3.png" onclick="addThemeThree()"></img>
 
         
       <section class="liveText-grid" id="liveText-grid">
-        <div id="showHostLine" class="live-text-host-line"></div> 
-        <div id="showCoupleOne" class="live-text-couple-one"></div>
-        <div id="extra1" class="extra1">&</div>
-        <div id="showCoupleTwo" class="live-text-couple-two"></div>
-        <div id="showActionLine" class="live-text-action-line"></div>
-        <div id="showInfo" class="live-text-info"></div>
-        <div id="showLocationInput" class="live-text-location-input"></div>
-        <div id="showPartyLine" class="live-text-party-line"></div>
+        <div id="showHostLine" class="live-text-host-line lowercaseText"></div> 
+        <div id="showCoupleOne" class="live-text-couple-one coupleText"></div>
+        <div id="extra1" class="extra1  lowercaseText">&</div>
+        <div id="showCoupleTwo" class="live-text-couple-two coupleText"></div>
+        <div id="showActionLine" class="live-text-action-line  lowercaseText"></div>
+        <div id="showInfo" class="live-text-info  lowercaseText"></div>
+        <div id="showLocationInput" class="live-text-location-input lowercaseText"></div>
+        <div id="showPartyLine" class="live-text-party-line lowercaseText"></div>
       </section>
       </wrapper>
     </main>
